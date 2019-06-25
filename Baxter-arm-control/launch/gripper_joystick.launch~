@@ -1,0 +1,10 @@
+<launch>
+
+  <!-- Start the Joy Node -->
+  <node name="my_test_node" pkg="subscribe_test" type="test_node" output="screen">
+  </node>
+
+  <!-- Run the Gripper Joystick Example -->
+  <node name="gripper_server" pkg="baxter_interface" type="gripper_action_server.py" output="screen" />
+
+</launch>
